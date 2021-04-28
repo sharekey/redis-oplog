@@ -3,6 +3,8 @@ import { _ } from 'meteor/underscore';
 import { RedisOplog, SyntheticMutator } from 'meteor/skadmin:redis-oplog';
 
 if (Meteor.isServer) {
+	console.dir(RedisOplog);
+	console.dir(SyntheticMutator);
 	RedisOplog.init({
 		redis: {
 			port: 6379, // Redis port
