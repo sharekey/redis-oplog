@@ -1,0 +1,11 @@
+.idea/
+.github/
+test/
+docs/
+testing/
+.husky/
+.deploy
+__mocks__/
+.vscode/
+.teamcity/
+types/
