@@ -1,9 +1,15 @@
-# Welcome to Redis Oplog
+## Introducing BlueLibs
 
+- [GitHub BlueLibs Monorepo](https://github.com/bluelibs/bluelibs)
+- Following the same bold vision of Meteor, but with a modern twist. www.bluelibs.com
+- Read more about our approach coming from Meteor: https://www.bluelibs.com/blog/2021/11/26/the-meteor-of-2022
+- We've implemented [RedisOplog](https://www.bluelibs.com/docs/package-x-bundle#live-data) in our framework as well, but it also works with in-memory and with customisable pubsub, not bound to redis.
+
+# Welcome to Redis Oplog
 
 ### LICENSE: MIT
 
-[![Build Status](https://api.travis-ci.org/cult-of-coders/redis-oplog.svg?branch=master)](https://travis-ci.org/cult-of-coders/redis-oplog) [![Backers on Open Collective](https://opencollective.com/redis-oplog/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/redis-oplog/sponsors/badge.svg)](#sponsors)
+[![Backers on Open Collective](https://opencollective.com/redis-oplog/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/redis-oplog/sponsors/badge.svg)](#sponsors)
 
 ## RedisOplog
 
@@ -82,7 +88,7 @@ RedisOplog.stats()
 
 ### Events for Meteor (+ Redis Oplog, Grapher and GraphQL/Apollo)
 
-*   Meteor Night 2018 Slide: [Arguments for Meteor](https://drive.google.com/file/d/1Tx9vO-XezO3DI2uAYalXPvhJ-Avqc4-q/view) - Theodor Diaconu, CEO of Cult of Coders: “Redis Oplog, Grapher, and Apollo Live.
+- Meteor Night 2018 Slide: [Arguments for Meteor](https://drive.google.com/file/d/1Tx9vO-XezO3DI2uAYalXPvhJ-Avqc4-q/view) - Theodor Diaconu, CEO of Cult of Coders: “Redis Oplog, Grapher, and Apollo Live.
 
 ### [Optimistic UI](docs/optimistic_ui.md)
 
@@ -139,4 +145,3 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/redis-oplog/sponsor/7/website" target="_blank"><img src="https://opencollective.com/redis-oplog/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/redis-oplog/sponsor/8/website" target="_blank"><img src="https://opencollective.com/redis-oplog/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/redis-oplog/sponsor/9/website" target="_blank"><img src="https://opencollective.com/redis-oplog/sponsor/9/avatar.svg"></a>
-

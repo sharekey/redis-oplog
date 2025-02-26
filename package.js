@@ -12,12 +12,12 @@ Package.describe({
 
 Npm.depends({
     ioredis: '4.26.0',
-    'deep-extend': '0.5.0',
+    'deep-extend': '0.6.0',
     'lodash.clonedeep': '4.5.0'
 });
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.5.1');
+    api.versionsFrom(['3.0.1', '3.1']);
     api.use([
         'underscore',
         'ecmascript',
