@@ -10,6 +10,7 @@ Package.describe({
     documentation: 'README.md'
 });
 
+
 Npm.depends({
     ioredis: '4.26.0',
     'deep-extend': '0.6.0',
