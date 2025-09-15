@@ -1,5 +1,5 @@
 {
-  "lockfileVersion": 1,
+  "lockfileVersion": 4,
   "dependencies": {
     "cluster-key-slot": {
       "version": "1.1.0",
@@ -12,19 +12,19 @@
       "integrity": "sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ=="
     },
     "deep-extend": {
-      "version": "0.5.0",
-      "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.5.0.tgz",
-      "integrity": "sha1-bvSgmwX5iw41jW2T1Mo8rsZnKAM="
-    },
-    "denque": {
-      "version": "1.5.0",
-      "resolved": "https://registry.npmjs.org/denque/-/denque-1.5.0.tgz",
-      "integrity": "sha512-CYiCSgIF1p6EUByQPlGkKnP1M9g0ZV3qMIrqMqZqdwazygIA/YP2vrbcyl1h/WppKJTdl1F85cXIle+394iDAQ=="
+      "version": "0.6.0",
+      "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.6.0.tgz",
+      "integrity": "sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA=="
     },
     "ioredis": {
       "version": "4.26.0",
       "resolved": "https://registry.npmjs.org/ioredis/-/ioredis-4.26.0.tgz",
       "integrity": "sha512-nh39okWezWWZ35/RxXXzHksMFt4WCaev8SNO2kozRDeVdEAJj16EarqPP3JeHz8IEjEXN5CiVtbWMk62Z0eveQ=="
+    },
+    "denque": {
+      "version": "1.5.1",
+      "resolved": "https://registry.npmjs.org/denque/-/denque-1.5.1.tgz",
+      "integrity": "sha512-XwE+iZ4D6ZUB7mfYRMb5wByE8L74HCn30FBN7sWnXksWc1LO1bPDl67pBR9o/kC4z/xSNAwkMYcGgqDV3BE3Hw=="
     },
     "lodash.clonedeep": {
       "version": "4.5.0",
