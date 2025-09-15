@@ -20,6 +20,7 @@
       "version": "4.26.0",
       "resolved": "https://registry.npmjs.org/ioredis/-/ioredis-4.26.0.tgz",
       "integrity": "sha512-nh39okWezWWZ35/RxXXzHksMFt4WCaev8SNO2kozRDeVdEAJj16EarqPP3JeHz8IEjEXN5CiVtbWMk62Z0eveQ=="
+    },
     "denque": {
       "version": "1.5.1",
       "resolved": "https://registry.npmjs.org/denque/-/denque-1.5.1.tgz",
