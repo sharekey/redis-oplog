@@ -1,11 +1,16 @@
 import { Accounts } from 'meteor/accounts-base';
+import { Random } from 'meteor/random';
+import { Meteor } from 'meteor/meteor'
+import { Roles } from 'meteor/roles'
+
+// import { UserPresence } from 'meteor/socialize:user-presence';
 
 // UserPresence.onCleanup(function(){
 //     Meteor.users.update({}, {$unset:{status:true}}, {multi:true});
 // });
-UserPresence.onUserOnline(function(userId) {
-    Meteor.users.update({ _id: userId }, { $set: { status: 'online' } });
-});
+// UserPresence.onUserOnline(function(userId) {
+//     Meteor.users.update({ _id: userId }, { $set: { status: 'online' } });
+// });
 // UserPresence.onUserIdle(function(userId){
 //     Meteor.users.update({_id:userId}, {$set:{status:"idle"}})
 // });
@@ -28,8 +33,8 @@ Meteor.publish('accounts_userData', function(options) {
     );
 });
 
-Meteor.publish('accounts_usersAssoc', function() {
-    let _groups = Roles.getGroupsForUser(this.userId, 'subscribed');
+Meteor.publish('accounts_usersAssoc', async function() {
+    let _groups = await Roles.getScopesForUserAsync(this.userId, 'subscribed');
 
     return Meteor.users.find(
         {
@@ -51,15 +56,15 @@ Meteor.publish('accounts_usersAssoc', function() {
 });
 
 Meteor.methods({
-    accounts_createUser(data) {
+    async accounts_createUser(data) {
         const email = `${Random.id()}@x.com`;
-        const userId = Accounts.createUser({
+        const userId = await Accounts.createUserAsync({
             username: Random.id(),
             email,
             password: '12345',
         });
 
-        Meteor.users.update(userId, {
+        await Meteor.users.updateAsync(userId, {
             $set: data,
         });
 
@@ -68,8 +73,8 @@ Meteor.methods({
             email,
         };
     },
-    accounts_updateUser(filters, modifier) {
-        Meteor.users.update(filters, modifier, {
+    async accounts_updateUser(filters, modifier) {
+        await Meteor.users.updateAsync(filters, modifier, {
             optimistic: false,
         });
     },
